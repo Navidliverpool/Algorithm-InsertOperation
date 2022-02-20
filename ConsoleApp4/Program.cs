@@ -32,7 +32,7 @@ namespace ConsoleApp4
             int poz = 4;
             bool pozBool = false;
             bool insertedNumBool = true;
-            bool jumpToSortPoz = false;
+            bool solvePoz = false;
             bool newArrayIndexIJumper = true;
 
             for (int i = 0; i <= array.Length - 1; i++)
@@ -48,10 +48,10 @@ namespace ConsoleApp4
                     {
                         newArray[i] = insertedNum;
                         insertedNumBool = false;
-                        jumpToSortPoz = true;
+                        solvePoz = true;
                     }
 
-                    if (jumpToSortPoz == true)
+                    if (solvePoz == true)
                     {
                         newArray[i + 1] = array[poz - 1];
                         pozBool = true;
